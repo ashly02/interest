@@ -1,0 +1,204 @@
+.main-login {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #f4f4f4 50%, #502780 50%);
+}
+
+.main-login .login-container {
+  height: 75vh;
+  width: 50%;
+  background: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(115, 62, 201, 0.4));
+  border-radius: 1rem;
+  margin: 2rem auto;
+  margin-top: 12vh;
+  box-shadow: 0.5rem 0.5rem 2rem -1rem #3a3939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-login .login-container .left-side,
+.main-login .login-container .right-side {
+  margin: 2rem;
+  box-shadow: 0.5rem 0.5rem 2rem -1rem #3a3939;
+  height: 80%;
+  width: 45%;
+  border-radius: 10px;
+  box-sizing: border-box;
+ 
+}
+
+.main-login .login-container .left-side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-login .login-container .left-side input {
+  display: flex;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 2rem;
+  width: 100%;
+  
+  margin-bottom: 1rem;
+  padding: 0.2rem 3rem;
+  font-size: small;
+  color: gray;
+  transition: all 0.1s ease-in-out;
+  box-sizing: border-box;
+  
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .main-login .login-container {
+    width: 70%;
+  }
+  
+  .main-login .login-container .left-side input {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-login .login-container {
+    width: 80%;
+  }
+
+  .main-login .login-container .left-side {
+    width: 100%;
+  }
+  
+  .main-login .login-container .left-side input {
+    width: 80%;
+  }
+
+  .main-login .login-container .right-side {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-login .login-container {
+    width: 90%;
+  }
+
+  .main-login .login-container .left-side input {
+    width: 100%;
+  }
+  
+}
+
+.main-login .login-container .left-side input:focus {
+  outline: none;
+  border: none;
+}
+
+.main-login .login-container .left-side input:hover {
+  box-shadow: 2px 2px 9px -1px #502780;
+}
+.main-login .login-container .left-side .title{
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 10px;
+  font-family: serif;
+  color:#502780;
+}
+.main-login .login-container .left-side button {
+  width: 100%; 
+  margin-top: 8px;
+  background-color: #502780;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.5 ease;
+  
+}
+
+
+.main-login .login-container .left-side button:hover {
+  box-shadow: 0.5px 0.5px 6px -1px gray;
+  transform: translateY(-5px);
+}
+.main-login .login-container .left-side .para{
+  margin-left: 32px;
+  margin-top: 3px;
+  color: #502780;
+  font-weight:bold;
+  font-size: medium;
+}
+.main-login .login-container .left-side .applogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width:150px;
+}
+
+.main-login .login-container .right-side {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+  .main-login .login-container .right-side .applogo1{
+    position:relative;
+    margin-top: 70px;
+    width:150px;
+    
+  }
+  
+  .main-login .login-container .right-side .applogo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Adjust the color to your preference */
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+  }
+  .main-login .login-container .right-side .applogo:hover::before {
+    opacity: 0;
+  }
+  .main-login .login-container .right-side .applogo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  .main-login .login-container .right-side .welcome{
+    font-weight: bolder;
+    font-size: x-large;
+    font-family:'Texturina', serif;
+    color:#260b46;
+    margin-top: 40px;
+  }
+  .password-input-container {
+    position: relative;
+  }
+  
+  .password-input {
+    padding-right: 30px; /* Adjust the padding as needed */
+  }
+  
+  .main-login .login-container .left-side .password-toggle-image {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left:65%;
+    right: 58%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
